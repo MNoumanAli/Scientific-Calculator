@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div id="error-container">
+      <div id="show-error">
+        <div id="error-content"></div>
+        <div id="hide-error">Ok</div>
+      </div>
+    </div>
+    <div class="container" id="body">
+      <!-- History and Variable Container -->
+      <div class="container-left">
+        <div class="history-container">
+          <div class="history-upper">History</div>
+          <div class="history-lower" id="his-cont"></div>
+        </div>
+        <div class="history-container">
+          <div class="variable-upper">Set Variables</div>
+          <div class="variable-input">
+            <input id="variable-name" type="text" placeholder="Name" />
+            <input id="variable-value" type="number" placeholder="value" />
+          </div>
+          <div id="add-variable-btn">Add</div>
+          <div class="variables-container" id="variables-container"></div>
+        </div>
+      </div>
+      <!-- Calcuator Container -->
+      <div class="container-right">
+        <div class="calculator">
+          <div class="cal-input">
+            <input
+              type="text"
+              name=""
+              id="edit-exp"
+              placeholder="type Expression"
+            />
+            <div id="change-input">
+              <img src="./img/arrow.png" alt="" />
+            </div>
+          </div>
+          <div class="cal-screen">
+            <div class="screen-content">
+              <p class="input-exp" id="input-exp"></p>
+              <p class="result" id="result"></p>
+            </div>
+            <div class="border"></div>
+          </div>
+          <div class="cal-btn">
+            <div class="col">
+              <div class="btn temp">(</div>
+              <div id="ac-btn">AC</div>
+              <div class="btn">7</div>
+              <div class="btn">4</div>
+              <div class="btn">1</div>
+              <div class="btn">0</div>
+              <div class="btn"></div>
+            </div>
+            <div class="col">
+              <div class="btn">)</div>
+              <div class="btn">tan</div>
+              <div class="btn">8</div>
+              <div class="btn">5</div>
+              <div class="btn">2</div>
+              <div class="btn">.</div>
+              <div class="opr" id="c-btn">C</div>
+            </div>
+            <div class="col">
+              <div class="btn">sqrt</div>
+              <div class="btn">sin</div>
+              <div class="btn">9</div>
+              <div class="btn">6</div>
+              <div class="btn">3</div>
+              <div id="eql">=</div>
+              <div class="btn opr">e</div>
+            </div>
+            <div class="col">
+              <div class="btn">cos</div>
+              <div class="btn opr">+</div>
+              <div class="btn opr">-</div>
+              <div class="btn opr">*</div>
+              <div class="btn opr">/</div>
+              <div class="btn opr">^</div>
+              <div class="btn opr">pi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/index.js" type="module"></script>
+  </body>
+</html>
